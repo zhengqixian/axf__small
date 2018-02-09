@@ -1,0 +1,46 @@
+<view class="mine">
+    <view class="userinfo theme-bg">
+      <view class="user">
+        <view class="user-phone">18600805498</view>
+        <view class="user-level theme-font">V0</view>
+      </view>
+    </view>
+    <view class="favorite theme-bg">
+      <navigator open-type='navigateTo' url="/favor" class="goodsFavorite item">
+        <text class="inner">商品收藏</text>
+      </navigator>
+      <view class="split"></view>
+      <view class="shopFavorite item">
+        <text class="inner">商品收藏</text>
+      </view>
+    </view>
+    <view class="mine-content">
+      <view class="mine-order">
+        <view class="padding spline-bottom more">
+          我的订单
+        </view>
+        <view class="order-types">
+          <text class="order-type order-type-11">代付款</text>
+          <text class="order-type order-type-12">待收货</text>
+          <text class="order-type order-type-13">待评价</text>
+          <text class="order-type order-type-14">退款/售后</text>
+        </view>
+      </view>
+       <view class='block'>
+        <view class='table' width="100%">
+          <view class='tr'>
+            <text width="25%" class="td mine-item mine-item-pointsShop">积分商城</text>
+            <text width="25%" class="td mine-item mine-item-coupon">优惠券</text>
+            <text width="25%" class="td mine-item mine-item-addrlist">收货地址</text>
+            <text width="25%" class="td mine-item mine-item-aftersale">客服/反馈</text>
+          </view>
+          <view class='tr'>
+            <text width="25%" class="td mine-item mine-item-about">关于我们</text>
+          </view>
+        </view>
+      </view> 
+    </view>
+    <view class="block theme-btn-light">
+        退出当前账号
+      </view> 
+  </view>

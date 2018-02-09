@@ -1,0 +1,149 @@
+.mine{
+  font-size:30rpx;
+}
+.mine-item{
+  float: left;
+  width: 20%;
+  padding-top: 11%;
+  line-height: 100rpx;
+  font-size: 24rpx;
+  text-align: center;
+  border-bottom: 1px solid #EFEFEF;
+  background: center 60rpx no-repeat;
+  -webkit-background-size: 60rpx;
+  background-size: 60rpx;
+   background-color: #fff;
+}
+.order-types{
+  overflow: hidden;
+}
+.order-type{
+  position: relative;
+  float: left;
+  width: 25%;
+  padding-top: 13%;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  background: center 40% no-repeat;
+  -webkit-background-size: auto 25%;
+  background-size: auto 25%;
+}
+.order-type-11{
+  background-image: url("http://i4.bvimg.com/630761/c1273c563a21a3ba.png");
+}
+.order-type-12{
+  background-image: url("http://i4.bvimg.com/630761/58c985c4675e6586.png");
+}
+.order-type-13{
+  background-image: url("http://i4.bvimg.com/630761/cc588cfd3cb01f1d.png");
+}
+.order-type-14{
+  background-image: url("http://i4.bvimg.com/630761/57b60100a41d5fd0.png");
+}
+.mine-item-pointsShop{
+  background-image: url("http://i4.bvimg.com/630761/5b17ebbbf7c4c17e.png");
+}
+.mine-item-coupon{
+  background-image: url("http://i4.bvimg.com/630761/7cb5fbe14e2c163a.png");
+}
+.mine-item-addrlist{
+  background-image: url("http://i4.bvimg.com/630761/b6cfc5336fdaa528.png");
+}
+.mine-item-aftersale{
+  background-image: url("http://i4.bvimg.com/630761/924b16708cb596ad.png");
+}
+.mine-item-about{
+  background-image: url("http://i4.bvimg.com/630761/b5fcc91fde688a83.png");
+}
+.mine-order{
+  background-color: #fff;
+  font-size:28rpx;
+}
+.mine-content{
+  position: absolute;
+  padding-top: 20rpx;
+  top: 270rpx;
+  left: 0;
+  right: 0;
+  bottom: 98rpx;
+  background-color: #efefef;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.split{
+  width:2rpx;
+  height: 60%;
+  -ms-align-self: center;
+  align-self: center;
+  background-color: #fff;
+}
+.goodsFavorite .inner{
+    background: url("http://i4.bvimg.com/630761/df97b20fe3d0e745.png") left center no-repeat;
+    -webkit-background-size: auto 36rpx;
+    background-size: auto 36rpx;
+    padding-left: 60rpx;
+    line-height: 40rpx;
+  }
+.shopFavorite .inner{
+    background: url("http://i4.bvimg.com/630761/4f3b8a69df937597.png") left center no-repeat;
+    -webkit-background-size: auto 36rpx;
+    background-size: auto 36rpx;
+    padding-left: 60rpx;
+    line-height: 40rpx;
+  }
+.favorite{
+  display: flex;
+  display: -webkit-flex;
+  height: 70rpx;
+  /*文本基线对齐(项目的第一行文字的基线对齐)*/
+  -ms-align-items: stretch;
+  align-items: stretch;
+  color: #fff;
+  font-size: 24rpx;
+  background-color: #f3c800;
+}
+
+.userinfo{
+  height: 200rpx;
+  position: relative;
+}
+.user{
+  height: 120rpx;
+  padding-left: 180rpx;
+  padding-top: 40rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #fff;
+  background: url("http://i4.bvimg.com/630761/87ef5f874fd021fc.png") 30rpx bottom no-repeat;
+  -webkit-background-size: auto 120rpx;
+  background-size: auto 120rpx;
+}
+.user::after{
+    background: url("http://i4.bvimg.com/630761/dbba50e701314fc7.png") 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    content: '';
+    position: absolute;
+    width: 22rpx;
+    height: 38rpx;
+    top: 50%;
+    right: 40rpx;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+.user-phone{
+  margin: 14rpx 0;
+  line-height: 1;
+}
+.user-level{
+  background: url("http://i4.bvimg.com/630761/8bbe81bcd0b3cda2.png") left center no-repeat;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+  line-height: 56rpx;
+  padding-left: 58rpx;
+  font-size: 20rpx;
+}

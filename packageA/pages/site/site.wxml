@@ -1,0 +1,20 @@
+<view class="site">
+  <view class='main'>
+    <view class='empty-notice'>
+    <view class='notice-icon'></view>
+    <view>选择地址</view>
+    </view>
+    <view class='addr-list block'>
+      <view class='addr-item spline-bottom' wx:for='{{sites}}' wx:key='{{item.id}}'>
+        <view class='addr-desc'>
+          <view class='no-wrap'> <text decode>{{item.linkman}}&nbsp;&nbsp;&nbsp;{{item.phone}}</text> </view>
+          <view class='no-wrap theme-font-gray'> <text decode>{{item.city}}&nbsp;{{ittem.site}}</text> </view>
+        </view>
+        <view class='addr-edit'></view>
+      </view>
+    </view>
+    <view class='pub-footer spline-bottom spline-top'>
+      <view class='theme-btn-big yellowbg' catchtap='addSite'>新增地址</view>
+    </view>
+  </view>
+</view>

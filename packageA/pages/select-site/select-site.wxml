@@ -1,0 +1,21 @@
+<view class='main'>
+  <input type="text" class="title-form" placeholder="请输入地址" maxlength="10"/>
+  <!--地图容器-->
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}" bindmarkertap="makertap"></map>
+  <view class='pois-list'>
+    <view>
+      <view class='spline-bottom'>
+        <view class='pois-item-name'>地址名称</view>
+        <view class='theme-font-gray'>详细地址</view>
+      </view>
+    </view>
+  </view>
+  <view class='sug-list' hidden='!(searchResults.length>0)'>
+    <view>
+      <view class='spline-bottom'>
+        <view class="pois-item-name">地址名称</view>
+        <view class="theme-font-gray">详细地址</view>
+      </view>
+    </view>
+  </view>
+</view>

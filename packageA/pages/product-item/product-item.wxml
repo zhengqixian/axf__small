@@ -1,0 +1,72 @@
+<view class='product-item'>
+  <view class='main'>
+    <view class='wraper'>
+      <view class='product-item-block'>
+        <view class='mod-banner-wrap-outer'>
+          <image src='{{productInfo.imgs.min}}'></image>
+        </view>
+        <view class='mod-pub-product'>
+          <view class='product-title-no-short'>
+            <view class='product-name'>{{productInfo.name}}</view> 
+          </view>
+          <view class='product-shopping'>
+            <text class='product-price'>￥{{productInfo.price}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='product-properties'>
+        <view class='title'>商品详情</view>
+        <view class='property-item'>
+          <text class='leading-word'><text decode>品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牌</text></text>
+          <text class='content-word'>{{productInfo.brand}}</text>
+        </view>
+        <view class="property-item">
+            <text class="leading-word">产品规格</text>
+            <text class="content-word">{{productInfo.unit}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="product-properties">
+        <view class="title">图文详情</view>
+        <view>{{productInfo.details}}</view>
+      </view>
+      <view class='subimg'>
+      <image width="100%" src="./productDetailDefault.jpg"></image>
+      </view>
+    </view>
+    <!-- 底部添加商品按钮组 -->
+    <!-- <view class="pub-footer spline-top">
+      
+      <view class="favor" class="{{ favorBol?'selected':''}}" bindtap="favor">收藏</view>
+      <view class="operates">
+        添加商品：
+        <view class="product-operates">
+          <text class="inner product-operates-sub" catchtap='subCart'>-</text>
+          <text class="product-operates-item">{{productInfo.num}}</text>
+          <text class="inner product-operates-add" catchtap='addCart'>+</text>
+        </view>
+      </view>
+    </view>
+   
+    <navigator class="cart-btn theme-bg" open-type='switchTab' url='/pages/cart/cart'>
+    <text class="cart-btn-num">{{productInfo.num}}</text>
+    </navigator>
+    </view> -->
+          <view  class="footer">
+        <view  class="collect">
+          <text class="collect-span">收藏</text>
+          <view class="collect-add">
+            添加商品：
+            <view  class="btn-wrap">
+              <text catchtap='subCart'>-</text>
+               <text>{{productInfo.num}}</text>
+              <text catchtap='addCart'>+</text>
+            </view>
+          </view>
+        </view>
+        <navigator open-type='switchTab' url='/pages/cart/cart' class='append'>
+          <view class="append-img"></view>
+          <text>{{productInfo.num}}</text>
+        </navigator>
+    </view>
+  </view>

@@ -1,0 +1,68 @@
+<view class="home">
+  <header-yellow></header-yellow>
+  <view class='main'>
+    <!--分类列表  -->
+   <view class='category'>
+      <scroll-view scroll-y class='categories'>
+        <view wx:for="{{computedCategories}}" data-index="{{index}}" wx:key="{{item.id}}" bindtap='changeCategories'>
+          <text class='{{activeCategory===index?"active":""}}'>{{item.name}}</text>
+        </view>
+      </scroll-view>
+    </view>
+    <!--商品列表  -->
+    <view class='productList' bindtap='hideProductList'>
+      <view class='{{allCategories||ranking?"product-filter active": "product-filter"}}'>
+        <!-- 全部分类和综合排序按钮 -->
+        <view class='filter-titles'>
+          <view catchtap='changeAllCategories' class='{{allCategories?"active":""}}'>
+            <text class='filter-title'>全部分类</text>
+            <text class='filter-arrows' decode>&nbsp;</text>
+          </view>
+          <view catchtap='changeRanking' class='{{ranking?"active":""}}'>
+            <text class='filter-title'>综合排序</text>
+            <text class='filter-arrows' decode>&nbsp;</text>
+          </view>
+        </view>
+        <!-- 显示隐藏的全部分类 -->
+        <view class='filter-items' hidden='{{!allCategories}}'>
+          <view>
+            <view class='{{activeCid === "全部分类" ? "active": ""}}' data-cidname="全部分类" data-index="all" bindtap='changeCid'>全部分类</view>
+            <view wx:for="{{computedCategories[activeCategory].cids}}" wx:key="{{item.cid_id}}" data-cidname="{{item.name}}" data-index="{{index}}" class='{{activeCid === item.name ? "active": ""}}' bindtap='changeCid'>{{item.name}}</view>
+          </view>
+        </view>
+        <!-- 显示隐藏的综合排序 -->
+        <view class='filter-items' hidden='{{!ranking}}'>
+          <view>
+            <view wx:for="{{rankingList}}" wx:key="{{item}}" class='{{activeRanking===item? "active": "" }}' data-item="{{item}}" bindtap='changeActiveRanking'>{{item}}</view>
+          </view>
+        </view>
+      </view>
+      <view class='productList-wrap'>
+           <navigator open-type='navigateTo' wx:for="{{activeCategoryProducts}}" wx:key="{{item.id}}" url="/packageA/pages/product-item/product-item?id={{item.id}}"> 
+          <view class='dl'>
+            <view class='dt'>
+              <image src='{{item.imgs.min}}'></image>
+            </view>
+            <view class='dd nowrap product-item-title'>
+              {{item.name}}
+            </view>
+            <view class='product-specifics-wrap'>
+              <view class='product-specifics'>
+                <text class='product-span'>{{item.unit}}ml</text>
+                <text class='product-var'>￥{{item.price}}</text>
+              </view>
+              <view class='dd product-operates'>
+                <text class='inner' data-product='{{item}}' catchtap='subCart'>-</text>
+                <text class='product-operates-item'>{{item.num}}</text>
+                <text class='inner' data-product='{{item}}' catchtap='addCart'>+</text>
+              </view>
+            </view>
+          </view>
+         </navigator> 
+        </view>
+      </view> 
+  </view>
+</view>
+
+
+
